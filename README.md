@@ -75,7 +75,7 @@ def manual_view(request, model_pk):
 
 ## Caveats
 
-Due to the task being sent after the current transaction has been commited, the
+Due to the task being sent after the current transaction has been committed, the
 `PostTransactionTask` provided in this package does not return an
 `celery.result.AsyncResult` as the original celery `Task` does.
 
