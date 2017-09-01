@@ -6,8 +6,6 @@ Signals are monkey patched into ``django.db.transaction``:
 * ``post_commit``: sent after a transaction is committed. If no changes were
   made in the transaction block, nothing is committed and this won't be sent.
 * ``post_rollback``: sent after a transaction is rolled back.
-* ``post_transaction_management``: sent after leaving transaction management.
-  This signal isn't  posted if a ``TransactionManagementError`` is raised.
 
 .. code-block:: python
 
